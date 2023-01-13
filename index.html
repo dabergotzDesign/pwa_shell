@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
+
+    <!-- PWA -->
+    <link rel="manifest" href="manifest.webmanifest" />
+    <!-- Safari unter iOS --> 
+    <meta name="apple-mobile-web-app-capable" content="yes" /> 
+    <meta name="apple-mobile-web-app-status-bar-style" content="black" /> 
+    <meta name="apple-mobile-web-app-title" content="PWA_Shell" />
+    <link rel="apple-touch-icon" href="images/icon_152.png" /> 
+    <!-- Windows --> 
+    <meta name="msapplication-TileImage" content="images/icon_144.png" /> 
+    <meta name="msapplication-TileColor" content="#2196f3" />
+    <link rel="stylesheet" href="css/w3.css">
+    <link rel="stylesheet" href="css/app.css">
+    <meta name="theme-color">
+    
+    <title>PWA - Shell (PLACEHOLDER)</title>
+    <script src="js/app.js" defer></script>
+</head>
+<body>
+    <div class="w3-bar w3-top w3-blue w3-card-2">
+  <!-- Nur für kleine Bildschirme -->
+  <div class="w3-hide-medium w3-hide-large">
+    <!-- add openSideNav -->
+    <a href="javascript:void(0)" title="Seitenmenü öffnen" id="hamburger" class="w3-bar-item w3-button w3-padding-large w3-opennav">&#9776;</a>
+  </div>
+
+  <!-- Titel wird auf allen Bildschirmen angezeigt -->
+  <span class="w3-bar-item w3-padding-large"><b>Titel</b></span>
+
+  <!-- Nur für mittlere und große Bildschirme -->
+  <div class="w3-hide-small">
+    <a href="#" class="w3-bar-item w3-button w3-padding-large">Link 1</a>
+    <a href="#" class="w3-bar-item w3-button w3-padding-large">Link 2</a>
+    <a href="#" class="w3-bar-item w3-button w3-padding-large">Link 3</a>
+  </div>
+
+  <!-- Alle Bildschirme -->
+  <a href="#" class="w3-bar-item w3-button w3-right w3-padding-large">&#x21bb;</a>
+  <a href="#" class="w3-bar-item w3-button w3-right w3-padding-large">&plus;</a>
+</div>
+
+<!-- Seitenmenü für kleine Bildschirme -->
+<nav class="w3-sidebar w3-bar-lock w3-blue w3-animate-left" id="side-nav" style="display: none; z-index: 9">
+    <!-- add closeSideNav -->
+  <a class="w3-closenav w3-right-align w3-padding-right w3-bar-item w3-button" href="javascript:void(0)" id="close">&times;</a>
+  <a class="w3-bar-item w3-button" href="#">Link 1</a>
+  <a class="w3-bar-item w3-button" href="#">Link 2</a>
+  <a class="w3-bar-item w3-button" href="#">Link 3</a>
+</nav>
+
+<!-- add closeSideNav -->
+<div class="w3-overlay" id="nav-overlay" style="cursor: pointer"></div>
+
+<div class="w3-content" style="max-width: 1000px; padding-top: 48px !important">
+  <h3 class="w3-center">Hallo, App Shell!</h3>
+</div> 
+</body>
+</html>
